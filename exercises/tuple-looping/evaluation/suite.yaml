@@ -1,0 +1,22 @@
+- tab: "tel_groter_dan_vijf"
+  testcases:
+    - expression: "tel_groter_dan_vijf((1, 6, 3, 8, 5, 10))"
+      return: 3
+    - expression: "tel_groter_dan_vijf((2, 4, 5))"
+      return: 0
+    - expression: "tel_groter_dan_vijf((6, 7, 8, 9))"
+      return: 4
+    - expression: "tel_groter_dan_vijf((5, 5, 5, 5))"
+      return: 0
+    - expression: "tel_groter_dan_vijf((10,))"
+      return: 1
+    - expression: "tel_groter_dan_vijf(())"
+      return: 0
+    - expression: "tel_groter_dan_vijf((1, 2, 3, 4, 5))"
+      return: 0
+    - expression: "tel_groter_dan_vijf((6,))"
+      return: 1
+    - expression: "tel_groter_dan_vijf((4, 5, 6, 7))"
+      return: 2
+    - expression: "tel_groter_dan_vijf((100, 2, 3, 4, 5))"
+      return: 1
