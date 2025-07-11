@@ -4,9 +4,11 @@
       "nl": "Lijst van Tuples"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "nI8vk9pyPC5RAMGbchSqqhts2mJV-fDcjhnKqI5ZFDGfFKvpBdKbIHHC6xWPTSp8",
+    "token": "9uVItQ2jm6rcNY7u-9n-JIbEHFMArEJuR46MEXsaGIXsEsDtS2CsABNwIbBcY_pG",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
