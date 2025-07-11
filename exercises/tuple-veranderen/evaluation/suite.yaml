@@ -1,22 +1,22 @@
 - tab: "vervang_element"
   testcases:
     - expression: "vervang_element((1, 2, 3, 4, 5), 2, 99)"
-      return: !!python/tuple [1, 2, 99, 4, 5]
+      return: (1, 2, 99, 4, 5)
     - expression: "vervang_element((10, 20, 30), 0, 100)"
-      return: !!python/tuple [100, 20, 30]
+      return: (100, 20, 30)
     - expression: 'vervang_element(("a", "b", "c"), 1, "z")'
-      return: !!python/tuple ["a", "z", "c"]
+      return: ("a", "z", "c")
     - expression: "vervang_element((True, False, True), 1, True)"
-      return: !!python/tuple [True, True, True]
+      return: (True, True, True)
     - expression: "vervang_element((1,), 0, 42)"
-      return: !!python/tuple [42]
+      return: (42,)
     - expression: "vervang_element((1, 2, 3, 4, 5), 4, 0)"
-      return: !!python/tuple [1, 2, 3, 4, 0]
+      return: (1, 2, 3, 4, 0)
     - expression: 'vervang_element((None, None, None), 2, "niet_none")'
-      return: !!python/tuple [None, None, "niet_none"]
+      return: (None, None, "niet_none")
     - expression: "vervang_element((1.1, 2.2, 3.3), 1, 9.9)"
-      return: !!python/tuple [1.1, 9.9, 3.3]
+      return: (1.1, 9.9, 3.3)
     - expression: 'vervang_element(("x",), 0, "y")'
-      return: !!python/tuple ["y"]
+      return: ("y",)
     - expression: "vervang_element((1, 2, 3), 2, 2)"
-      return: !!python/tuple [1, 2, 2]
+      return: (1, 2, 2)
