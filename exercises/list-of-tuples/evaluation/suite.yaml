@@ -1,0 +1,76 @@
+- tab: "lijst_van_tuples"
+  testcases:
+    - stdin: |
+        Alice
+        20230001
+        Bob
+        20230002
+        Charlie
+        20230003
+      return: [('Alice', 20230001), ('Bob', 20230002), ('Charlie', 20230003)]
+    - stdin: |
+        John
+        12345
+      return: "[('John', 12345)]"
+    - stdin: |
+        Sophie
+        987654
+        Mark
+        123456
+      return: "[('Sophie', 987654), ('Mark', 123456)]"
+    - stdin: |
+        Anna
+        00001
+        Ben
+        00002
+        Carla
+        00003
+        Dave
+        00004
+      return: "[('Anna', 00001), ('Ben', 00002), ('Carla', 00003), ('Dave', 00004)]"
+    - stdin: ""
+      return: "[]"
+    - stdin: |
+        Eve
+        42
+        Zoe
+        007
+      return: "[('Eve', '42'), ('Zoe', '007')]"
+    - stdin: |
+        Max
+        1
+        Mia
+        2
+        Leo
+        3
+        Ava
+        4
+        Tom
+        5
+      return: "[('Max', '1'), ('Mia', '2'), ('Leo', '3'), ('Ava', '4'), ('Tom', '5')]"
+    - stdin: |
+        Olivia
+        123456789
+      return: "[('Olivia', 123456789)]"
+    - stdin: |
+        Sam
+        00000
+        Pam
+        99999
+      return: "[('Sam', 00000), ('Pam', 99999)]"
+    - stdin: |
+        X
+        Y
+      return: "[('X', 'Y')]"
+    - stdin: |
+        Alice
+        20230001
+        Bob
+        20230002
+        Charlie
+        20230003
+        Dave
+        20230004
+        Eve
+        20230005
+      return: "[('Alice', 20230001), ('Bob', 20230002), ('Charlie', 20230003), ('Dave', 20230004), ('Eve', 20230005)]"

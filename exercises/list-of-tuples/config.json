@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Lijst van Tuples"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "nI8vk9pyPC5RAMGbchSqqhts2mJV-fDcjhnKqI5ZFDGfFKvpBdKbIHHC6xWPTSp8",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
