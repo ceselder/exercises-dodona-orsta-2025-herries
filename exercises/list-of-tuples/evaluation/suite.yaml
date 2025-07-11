@@ -1,6 +1,7 @@
 - tab: "lijst_van_tuples"
   testcases:
     - stdin: |
+        6
         Alice
         20230001
         Bob
@@ -9,16 +10,19 @@
         20230003
       stdout: "[('Alice', 20230001), ('Bob', 20230002), ('Charlie', 20230003)]\n"
     - stdin: |
+        2
         John
         12345
-      stdout: "[('John', '12345')]\n"
+      stdout: "[('John', 12345)]\n"
     - stdin: |
+        4
         Sophie
         987654
         Mark
         123456
-      stdout: "[('Sophie', '987654'), ('Mark', '123456')]\n"
+      stdout: "[('Sophie', 987654), ('Mark', 123456)]\n"
     - stdin: |
+        8
         Anna
         00001
         Ben
@@ -27,6 +31,7 @@
         00003
         Dave
         00004
-      stdout: "[('Anna', '00001'), ('Ben', '00002'), ('Carla', '00003'), ('Dave', '00004')]\n"
-    - stdin: ""
+      stdout: "[('Anna', 1), ('Ben', 2), ('Carla', 3), ('Dave', 4)]\n"
+    - stdin: |
+        0
       stdout: "[]\n"

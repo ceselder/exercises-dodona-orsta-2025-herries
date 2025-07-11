@@ -4,11 +4,12 @@ Schrijf een programma dat standaardinvoer omzet naar een lijst van tuples. Elke 
 
 ## Invoer
 
-De invoer bestaat uit meerdere regels, waarbij steeds een naam wordt gevolgd door het bijbehorende studentennummer. Dus: eerst een regel met een naam, daarna een regel met het studentennummer van die persoon.
+De eerste regel van de invoer bevat het aantal regels dat volgt. Daarna volgen steeds een naam en het bijbehorende studentennummer, afwisselend per regel. Dus: eerst een regel met een naam, daarna een regel met het studentennummer van die persoon.
 
 **Voorbeeld van invoer:**
 
 ```
+6
 Alice
 20230001
 Bob
