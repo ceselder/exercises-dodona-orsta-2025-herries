@@ -11,7 +11,7 @@
     - expression: "vervang_element((1,), 0, 42)"
       return: (42,)
     - expression: "vervang_element((1, 2, 3, 4, 5), 4, 0)"
-      return: (1, 2, 3, 4, 0)
+      return: tuple((1, 2, 3, 4, 0))
     - expression: 'vervang_element((None, None, None), 2, "niet_none")'
       return: (None, None, "niet_none")
     - expression: "vervang_element((1.1, 2.2, 3.3), 1, 9.9)"
