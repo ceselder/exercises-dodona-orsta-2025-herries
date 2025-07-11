@@ -24,5 +24,5 @@ Je programma moet een lijst van tuples genereren, waarbij elke tuple bestaat uit
 **Voorbeeld van uitvoer:**
 
 ```python
-[('Alice', '20230001'), ('Bob', '20230002'), ('Charlie', '20230003')]
+[('Alice', 20230001), ('Bob', 20230002), ('Charlie', 20230003)]
 ```
