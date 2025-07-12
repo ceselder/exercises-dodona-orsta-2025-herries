@@ -1,32 +1,32 @@
-- tab: "voeg_toe_gesorteerd"
+- tab: "merge_lijsten"
   testcases:
     - expression: |
-        voeg_toe_gesorteerd([2, 4, 7, 10], 5)
-      return: [2, 4, 5, 7, 10]
+        merge_lijsten([1, 3, 5, 7], [2, 4, 6, 8])
+      return: [1, 2, 3, 4, 5, 6, 7, 8]
     - expression: |
-        voeg_toe_gesorteerd([], 3)
-      return: [3]
-    - expression: |
-        voeg_toe_gesorteerd([1], 0)
-      return: [0, 1]
-    - expression: |
-        voeg_toe_gesorteerd([1, 2, 3], 2)
-      return: [1, 2, 2, 3]
-    - expression: |
-        voeg_toe_gesorteerd([1, 3, 5, 7], 8)
-      return: [1, 3, 5, 7, 8]
-    - expression: |
-        voeg_toe_gesorteerd([10, 20, 30], 25)
-      return: [10, 20, 25, 30]
-    - expression: |
-        voeg_toe_gesorteerd([0, 2, 4, 6], 4)
-      return: [0, 2, 4, 4, 6]
-    - expression: |
-        voeg_toe_gesorteerd([1, 2, 3, 4, 5], 0)
-      return: [0, 1, 2, 3, 4, 5]
-    - expression: |
-        voeg_toe_gesorteerd([1, 2, 3, 4, 5], 6)
+        merge_lijsten([1, 4, 6], [2, 3, 5])
       return: [1, 2, 3, 4, 5, 6]
     - expression: |
-        voeg_toe_gesorteerd([2, 4, 6, 8], 4)
-      return: [2, 4, 4, 6, 8]
+        merge_lijsten([], [1, 2, 3])
+      return: [1, 2, 3]
+    - expression: |
+        merge_lijsten([1, 2, 3], [])
+      return: [1, 2, 3]
+    - expression: |
+        merge_lijsten([1, 2, 3], [1, 2, 3])
+      return: [1, 1, 2, 2, 3, 3]
+    - expression: |
+        merge_lijsten([2, 4, 6], [1, 3, 5])
+      return: [1, 2, 3, 4, 5, 6]
+    - expression: |
+        merge_lijsten([1], [2])
+      return: [1, 2]
+    - expression: |
+        merge_lijsten([2], [1])
+      return: [1, 2]
+    - expression: |
+        merge_lijsten([1, 3, 5], [2, 4, 6, 8, 10])
+      return: [1, 2, 3, 4, 5, 6, 8, 10]
+    - expression: |
+        merge_lijsten([1, 2, 4, 7], [3, 5, 6])
+      return: [1, 2, 3, 4, 5, 6, 7]
