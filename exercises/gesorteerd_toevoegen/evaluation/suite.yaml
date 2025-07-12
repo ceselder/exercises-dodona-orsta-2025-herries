@@ -1,52 +1,32 @@
 - tab: "voeg_toe_gesorteerd"
   testcases:
     - expression: |
-        lijst = [2, 4, 7, 10]
-        voeg_toe_gesorteerd(lijst, 5)
-        lijst
+        voeg_toe_gesorteerd([2, 4, 7, 10], 5)
       return: [2, 4, 5, 7, 10]
     - expression: |
-        lijst = []
-        voeg_toe_gesorteerd(lijst, 3)
-        lijst
+        voeg_toe_gesorteerd([], 3)
       return: [3]
     - expression: |
-        lijst = [1]
-        voeg_toe_gesorteerd(lijst, 0)
-        lijst
+        voeg_toe_gesorteerd([1], 0)
       return: [0, 1]
     - expression: |
-        lijst = [1, 2, 3]
-        voeg_toe_gesorteerd(lijst, 2)
-        lijst
+        voeg_toe_gesorteerd([1, 2, 3], 2)
       return: [1, 2, 2, 3]
     - expression: |
-        lijst = [1, 3, 5, 7]
-        voeg_toe_gesorteerd(lijst, 8)
-        lijst
+        voeg_toe_gesorteerd([1, 3, 5, 7], 8)
       return: [1, 3, 5, 7, 8]
     - expression: |
-        lijst = [10, 20, 30]
-        voeg_toe_gesorteerd(lijst, 25)
-        lijst
+        voeg_toe_gesorteerd([10, 20, 30], 25)
       return: [10, 20, 25, 30]
     - expression: |
-        lijst = [0, 2, 4, 6]
-        voeg_toe_gesorteerd(lijst, 4)
-        lijst
+        voeg_toe_gesorteerd([0, 2, 4, 6], 4)
       return: [0, 2, 4, 4, 6]
     - expression: |
-        lijst = [1, 2, 3, 4, 5]
-        voeg_toe_gesorteerd(lijst, 0)
-        lijst
+        voeg_toe_gesorteerd([1, 2, 3, 4, 5], 0)
       return: [0, 1, 2, 3, 4, 5]
     - expression: |
-        lijst = [1, 2, 3, 4, 5]
-        voeg_toe_gesorteerd(lijst, 6)
-        lijst
+        voeg_toe_gesorteerd([1, 2, 3, 4, 5], 6)
       return: [1, 2, 3, 4, 5, 6]
     - expression: |
-        lijst = [2, 4, 6, 8]
-        voeg_toe_gesorteerd(lijst, 4)
-        lijst
+        voeg_toe_gesorteerd([2, 4, 6, 8], 4)
       return: [2, 4, 4, 6, 8]
