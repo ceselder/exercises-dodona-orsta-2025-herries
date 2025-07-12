@@ -20,3 +20,5 @@ tuples = [7, (8, (9, 10)), (11, 12, (13, 14))]
 ## Hint!
 
 Gebruik recursie om alle geneste tuples te doorlopen. Je kan nog steeds `type(current) is tuple` gebruiken om te controleren of een element een tuple is.
+
+Dit is een pittige oefening! wees niet bang een hulpfunctie te schrijven!

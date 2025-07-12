@@ -1,0 +1,27 @@
+- tab: "print_student_info"
+  testcases:
+    - expression: "print_student_info(('Alice Janssens', '12-03-2002', 123456))"
+      stdout: |
+        Student: Alice Janssens
+        Verjaardag: 12-03-2002
+        Studentennummer: 123456
+    - expression: "print_student_info(('Bob de Vries', '01-01-2000', 654321))"
+      stdout: |
+        Student: Bob de Vries
+        Verjaardag: 01-01-2000
+        Studentennummer: 654321
+    - expression: "print_student_info(('Charlie', '31-12-1999', 111111))"
+      stdout: |
+        Student: Charlie
+        Verjaardag: 31-12-1999
+        Studentennummer: 111111
+    - expression: "print_student_info(('Dana', '15-07-2001', 222222))"
+      stdout: |
+        Student: Dana
+        Verjaardag: 15-07-2001
+        Studentennummer: 222222
+    - expression: "print_student_info(('Eve', '05-05-2005', 333333))"
+      stdout: |
+        Student: Eve
+        Verjaardag: 05-05-2005
+        Studentennummer: 333333
