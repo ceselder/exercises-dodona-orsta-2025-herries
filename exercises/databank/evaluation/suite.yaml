@@ -1,15 +1,12 @@
 - tab: "insert_video"
   testcases:
     - expression: |
-        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Bought Everything In A Store", 40000000))
+        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Bought Everything In A Store", 40000000))
       return:
         [
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("I Bought Everything In A Store",
           40000000),
@@ -20,37 +17,30 @@
         insert_video([], ("I Ate The World's Largest Pizza", 42000000))
       return: [("I Ate The World's Largest Pizza", 42000000)]
     - expression: |
-        insert_video([("Last To Leave The Circle Wins $500,000", 30000000)], ("I Gave Away $1,000,000", 12000000))
+        insert_video([("Last To Leave The Circle Wins $500000", 30000000)], ("I Gave Away $1000000", 12000000))
       return:
         [
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
         ]
     - expression: |
-        insert_video([("Last To Leave The Circle Wins $500,000", 30000000)], ("Surviving 24 Hours In The Bermuda Triangle", 50000000))
+        insert_video([("Last To Leave The Circle Wins $500000", 30000000)], ("Surviving 24 Hours In The Bermuda Triangle", 50000000))
       return:
         [
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("Surviving 24 Hours In The Bermuda Triangle",
           50000000),
         ]
     - expression: |
-        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Spent 50 Hours In Solitary Confinement", 100000000))
+        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Spent 50 Hours In Solitary Confinement", 100000000))
       return:
         [
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("Surviving 24 Hours In The Bermuda Triangle",
           50000000),
@@ -58,31 +48,25 @@
           100000000),
         ]
     - expression: |
-        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Survived On $0.01 For 30 Days", 1000000))
+        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Survived On $0.01 For 30 Days", 1000000))
       return:
         [
           ("I Survived On $0.01 For 30 Days",
           1000000),
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("Surviving 24 Hours In The Bermuda Triangle",
           50000000),
         ]
     - expression: |
-        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Built Willy Wonka's Chocolate Factory", 30000000))
+        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Built Willy Wonka's Chocolate Factory", 30000000))
       return:
         [
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("I Built Willy Wonka's Chocolate Factory",
           30000000),
@@ -90,16 +74,12 @@
           50000000),
         ]
     - expression: |
-        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 25000000), ("I Spent 50 Hours In Solitary Confinement", 80000000)], ("I Gave My 100,000,000th Subscriber $1,000,000", 60000000))
+        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 25000000), ("I Spent 50 Hours In Solitary Confinement", 80000000)], ("I Gave My 100000000th Subscriber $1000000", 60000000))
       return:
         [
           ("Surviving 24 Hours In The Bermuda Triangle",
           25000000),
-          ("I Gave My 100,
-          000,
-          000th Subscriber $1,
-          000,
-          000",
+          ("I Gave My 100000000th Subscriber $1000000",
           60000000),
           ("I Spent 50 Hours In Solitary Confinement",
           80000000),
@@ -114,11 +94,10 @@
           100000000),
         ]
     - expression: |
-        insert_video([("Last To Leave The Circle Wins $500,000", 30000000), ("I Bought Everything In A Store", 40000000)], ("I Gave Away A Private Island", 35000000))
+        insert_video([("Last To Leave The Circle Wins $500000", 30000000), ("I Bought Everything In A Store", 40000000)], ("I Gave Away A Private Island", 35000000))
       return:
         [
-          ("Last To Leave The Circle Wins $500,
-          000",
+          ("Last To Leave The Circle Wins $500000",
           30000000),
           ("I Gave Away A Private Island",
           35000000),
@@ -126,24 +105,21 @@
           40000000),
         ]
     - expression: |
-        insert_video([("I Survived On $0.01 For 30 Days", 1000000), ("I Gave Away $1,000,000", 12000000)], ("I Survived 7 Days Buried Alive", 10000000))
+        insert_video([("I Survived On $0.01 For 30 Days", 1000000), ("I Gave Away $1000000", 12000000)], ("I Survived 7 Days Buried Alive", 10000000))
       return:
         [
           ("I Survived On $0.01 For 30 Days",
           1000000),
           ("I Survived 7 Days Buried Alive",
           10000000),
-          ("I Gave Away $1,
-          000,
-          000",
+          ("I Gave Away $1000000",
           12000000),
         ]
     - expression: |
-        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Gave Away $10,000 To Strangers", 49900000))
+        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Gave Away $10000 To Strangers", 49900000))
       return:
         [
-          ("I Gave Away $10,
-          000 To Strangers",
+          ("I Gave Away $10000 To Strangers",
           49900000),
           ("Surviving 24 Hours In The Bermuda Triangle",
           50000000),
