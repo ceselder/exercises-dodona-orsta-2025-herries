@@ -14,5 +14,5 @@ tuples = [(7,), (8, 9), (10, 11, 12)]
 
 ## Opdracht
 
-1. Schrijf een functie `ontvouw_tuples(tuples)` die een lijst van tuples als parameter krijgt.
+1. Schrijf een functie `ontvouw_tuples(lijst_van_tuples)` die een lijst van tuples als parameter krijgt.
 2. De functie retourneert een lijst met alle elementen uit de tuples, in dezelfde volgorde.
