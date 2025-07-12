@@ -4,9 +4,11 @@
       "nl": "Plans within plans"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "US5HsWBHudnCXT9CEPZIJhUS526UBSu42Z9H6XmIpAPX2X65CT_WG5Yf7TVWRRbb",
+    "token": "QyUYkYWyW7hgbVN_hZU---Ea6r8jNYwRN2dVYSKsM8yQgabdaA4EZ2-Xjs-22znX",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
