@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Tuples ontvouwen"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "9uVItQ2jm6rcNY7u-9n-JIbEHFMArEJuR46MEXsaGIXsEsDtS2CsABNwIbBcY_pG",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
