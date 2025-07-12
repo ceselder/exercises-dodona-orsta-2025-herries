@@ -1,26 +1,26 @@
 - tab: "ontvouw_tuples"
   testcases:
     - expression: "ontvouw_tuples([(7, ), (8, 9), (10, 11, 12)])"
-      return: [7, 8, 9, 10, 11, 12]
+      returns: [7, 8, 9, 10, 11, 12]
     - expression: "ontvouw_tuples([(1, 2), (3, 4)])"
-      return: [1, 2, 3, 4]
+      returns: [1, 2, 3, 4]
     - expression: "ontvouw_tuples([(5, )])"
-      return: [5]
+      returns: [5]
     - expression: "ontvouw_tuples([])"
-      return: []
+      returns: []
     - expression: "ontvouw_tuples([(0, 1), (2, ), (3, 4, 5)])"
-      return: [0, 1, 2, 3, 4, 5]
+      returns: [0, 1, 2, 3, 4, 5]
     - expression: "ontvouw_tuples([(1, 2, 3), (4, ), (5, 6)])"
-      return: [1, 2, 3, 4, 5, 6]
+      returns: [1, 2, 3, 4, 5, 6]
     - expression: "ontvouw_tuples([(100, ), (200, 300), (400, 500, 600)])"
-      return: [100, 200, 300, 400, 500, 600]
+      returns: [100, 200, 300, 400, 500, 600]
     - expression: "ontvouw_tuples([(1, )])"
-      return: [1]
+      returns: [1]
     - expression: "ontvouw_tuples([()])"
-      return: []
+      returns: []
     - expression: "ontvouw_tuples([(1, 2), (), (3, )])"
-      return: [1, 2, 3]
+      returns: [1, 2, 3]
     - expression: "ontvouw_tuples([(), (), ()])"
-      return: []
+      returns: []
     - expression: "ontvouw_tuples([(0, )])"
-      return: [0]
+      returns: [0]

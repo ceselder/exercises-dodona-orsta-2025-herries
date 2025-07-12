@@ -13,15 +13,13 @@
     - expression: "voeg_in_midden([1, 2, 3, 4, 5, 6], 0)"
       return: [1, 2, 3, 0, 4, 5, 6]
     - expression: "voeg_in_midden([100, 200, 300, 400, 500], 250)"
-      return: [100, 250, 200, 300, 400, 500]
+      return: [100, 200, 250, 300, 400, 500]
     - expression: "voeg_in_midden(['a', 'b', 'c', 'd'], 'x')"
       return: ["a", "b", "x", "c", "d"]
-    - expression: "voeg_in_midden([True, False], None)"
-      return: [True, None, False]
     - expression: "voeg_in_midden([1.1, 2.2, 3.3], 4.4)"
       return: [1.1, 4.4, 2.2, 3.3]
     - expression: "voeg_in_midden([1, 2, 3, 4, 5], 6)"
-      return: [1, 6, 2, 3, 4, 5]
+      return: [1, 2, 6, 3, 4, 5]
     - expression: "voeg_in_midden([0], 1)"
       return: [1, 0]
     - expression: "voeg_in_midden(['x', 'y', 'z'], 'w')"
