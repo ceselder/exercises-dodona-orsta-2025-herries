@@ -7,7 +7,7 @@ Een tuple is een **immutable** datatype in Python, wat betekent dat je de inhoud
 Schrijf een functie `vervang_element(tuple_invoer, index, nieuw_element)` die:
 
 - Het element op positie `index` in `tuple_invoer` vervangt door `nieuw_element`.
-- Het resultaat als een nieuwe tuple teruggeeft.
+- Het resultaat als een nieuwe tuple print.
 
 ## Verwachte uitvoer
 

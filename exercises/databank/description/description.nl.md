@@ -10,11 +10,14 @@ Hierbij is `videonaam` een string en `viewcount` een geheel getal dat het aantal
 
 ## Opdracht
 
-Schrijf een functie `insert_video(databank, video)` die een nieuwe video (tuple) **invoegt op de juiste plaats** in de databank, zodat de lijst **gesorteerd blijft op viewcount** (van laag naar hoog).
+Schrijf een **functie** `insert_video(databank, video)` die een nieuwe video (tuple) **invoegt op de juiste plaats** in de databank, zodat de lijst **gesorteerd blijft op viewcount** (van laag naar hoog).
 
 ### Voorbeeld
 
 ```python
+def insert_video(databank, video):
+    # Jouw code hier
+
 databank = [("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)]
 insert_video(databank, ("Databanken en Donuts", 400))
 print(databank)
@@ -33,4 +36,4 @@ print(databank)
 
 ## Test je oplossing
 
-Probeer je functie met verschillende invoer en controleer of de databank altijd correct gesorteerd blijft.
+Plaats je code in een functie en probeer deze met verschillende invoer. Controleer of de databank altijd correct gesorteerd blijft.
