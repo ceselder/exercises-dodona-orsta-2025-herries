@@ -4,9 +4,11 @@
       "nl": "databank"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "vj7TPmuBzb-D466qhGnmeh9IWrv8MpTIKr3MECjS2eksdTW7vPig7ZJfrM_pvaTt",
+    "token": "_aiDZaKhreuU3ihqhsG3w498KBWBucRV-KJy9bRSW_PHaBQP4XQsvkJZAq8IKS_v",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
