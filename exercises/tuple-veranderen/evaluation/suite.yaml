@@ -1,22 +1,22 @@
 - tab: "vervang_element"
   testcases:
     - expression: "vervang_element((1, 2, 3, 4, 5), 2, 99)"
-      return: tuple([1, 2, 99, 4, 5])
+      stdout: (1, 2, 99, 4, 5)
     - expression: "vervang_element((10, 20, 30), 0, 100)"
-      return: (100, 20, 30)
+      stdout: (100, 20, 30)
     - expression: 'vervang_element(("a", "b", "c"), 1, "z")'
-      return: ("a", "z", "c")
+      stdout: ("a", "z", "c")
     - expression: "vervang_element((True, False, True), 1, True)"
-      return: (True, True, True)
+      stdout: (True, True, True)
     - expression: "vervang_element((1,), 0, 42)"
-      return: (42,)
+      stdout: (42,)
     - expression: "vervang_element((1, 2, 3, 4, 5), 4, 0)"
-      return: (1, 2, 3, 4, 0)
+      stdout: (1, 2, 3, 4, 0)
     - expression: 'vervang_element((None, None, None), 2, "niet_none")'
-      return: (None, None, "niet_none")
+      stdout: (None, None, "niet_none")
     - expression: "vervang_element((1.1, 2.2, 3.3), 1, 9.9)"
-      return: (1.1, 9.9, 3.3)
+      stdout: (1.1, 9.9, 3.3)
     - expression: 'vervang_element(("x",), 0, "y")'
-      return: ("y",)
+      stdout: ("y",)
     - expression: "vervang_element((1, 2, 3), 2, 2)"
-      return: (1, 2, 2)
+      stdout: (1, 2, 2)
