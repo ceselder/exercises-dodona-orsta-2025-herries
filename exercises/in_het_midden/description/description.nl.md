@@ -1,31 +1,20 @@
-# Opgave: Gestructureerd Printen
+# Opgave: Voeg een getal toe in het midden van een lijst
 
-Schrijf een functie die als input een tuple krijgt met drie elementen:
+Schrijf een functie `voeg_in_midden(lijst, getal)` die een lijst en een getal als argument krijgt. De functie moet het getal precies in het midden van de lijst toevoegen. Als de lijst een even aantal elementen bevat, voeg het getal toe na het eerste midden.
 
-1. **Naam van de student** (string)
-2. **Verjaardag** (string, formaat `DD-MM-YYYY`)
-3. **Studentennummer** (integer)
-
-Je taak is om deze gegevens gestructureerd te printen, bijvoorbeeld:
-
-```
-Student: Alice Janssens
-Verjaardag: 12-03-2002
-Studentennummer: 123456
-```
-
-### Voorbeeld
+## Voorbeeld
 
 ```python
-print_student_info(("Alice Janssens", "12-03-2002", 123456))
+>>> voeg_in_midden([1, 2, 3, 4], 99)
+[1, 2, 99, 3, 4]
+
+>>> voeg_in_midden([10, 20, 30], 5)
+[10, 5, 20, 30]
 ```
 
-**Uitvoer:**
+## Verwachtingen
 
-```
-Student: Alice Janssens
-Verjaardag: 12-03-2002
-Studentennummer: 123456
-```
+- De originele lijst mag niet worden aangepast; geef een nieuwe lijst terug.
+- Gebruik geen ingebouwde functies zoals `insert`.
 
-Zorg ervoor dat de functie altijd de gegevens in deze volgorde en op deze manier print.
+Veel succes!

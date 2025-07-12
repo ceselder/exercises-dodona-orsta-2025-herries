@@ -1,0 +1,21 @@
+# Opgave: Voeg een getal toe aan een gesorteerde lijst
+
+Schrijf een Python-functie `voeg_toe_gesorteerd(lijst, getal)` die een gesorteerde lijst van gehele getallen en een nieuw getal als argumenten krijgt. De functie voegt het getal toe aan de lijst, zodat de lijst gesorteerd blijft.
+
+Gebruik geen ingebouwde sorteermethoden zoals `sort()` of `sorted()` ;)
+
+## Voorbeeld
+
+```python
+lijst = [2, 4, 7, 10]
+voeg_toe_gesorteerd(lijst, 5)
+print(lijst)  # Uitvoer: [2, 4, 5, 7, 10]
+```
+
+## Hint
+
+Herinner je dat je in python een deel van een lijst kan krijgen aan de hand van de volgende syntax
+
+```python
+lijst[0:10]
+```
