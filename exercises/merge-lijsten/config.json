@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Lijsten samenvoegen"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "iguFuF6Gd5JmvjiTUXiWIt7PKmHV-au5IJNsVw4XbCciXMaxXyeM8Rk-MJsYZDvi",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
