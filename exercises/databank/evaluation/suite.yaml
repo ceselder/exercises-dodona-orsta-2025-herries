@@ -1,104 +1,150 @@
 - tab: "insert_video"
   testcases:
     - expression: |
-        insert_video([("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)], ("Databanken en Donuts", 400))
+        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Bought Everything In A Store", 40000000))
       return:
         [
-          ("Python voor Pannenkoeken",
-          120),
-          ("Loops en Limonade",
-          300),
-          ("Databanken en Donuts",
-          400),
-          ("Functies en Fiasco's",
-          500),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("I Bought Everything In A Store",
+          40000000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
         ]
     - expression: |
-        insert_video([], ("Introductie tot Python", 42))
-      return: [("Introductie tot Python", 42)]
+        insert_video([], ("I Ate The World's Largest Pizza", 42000000))
+      return: [("I Ate The World's Largest Pizza", 42000000)]
     - expression: |
-        insert_video([("Loops en Limonade", 300)], ("Python voor Pannenkoeken", 120))
-      return: [("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300)]
-    - expression: |
-        insert_video([("Loops en Limonade", 300)], ("Functies en Fiasco's", 500))
-      return: [("Loops en Limonade", 300), ("Functies en Fiasco's", 500)]
-    - expression: |
-        insert_video([("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)], ("Recursie en Rijstpap", 1000))
+        insert_video([("Last To Leave The Circle Wins $500,000", 30000000)], ("I Gave Away $1,000,000", 12000000))
       return:
         [
-          ("Python voor Pannenkoeken",
-          120),
-          ("Loops en Limonade",
-          300),
-          ("Functies en Fiasco's",
-          500),
-          ("Recursie en Rijstpap",
-          1000),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
         ]
     - expression: |
-        insert_video([("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)], ("Zero Views, Zero Problems", 0))
+        insert_video([("Last To Leave The Circle Wins $500,000", 30000000)], ("Surviving 24 Hours In The Bermuda Triangle", 50000000))
       return:
         [
-          ("Zero Views,
-          Zero Problems",
-          0),
-          ("Python voor Pannenkoeken",
-          120),
-          ("Loops en Limonade",
-          300),
-          ("Functies en Fiasco's",
-          500),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
         ]
     - expression: |
-        insert_video([("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)], ("Lijsten en Lolly's", 300))
+        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Spent 50 Hours In Solitary Confinement", 100000000))
       return:
         [
-          ("Python voor Pannenkoeken",
-          120),
-          ("Loops en Limonade",
-          300),
-          ("Lijsten en Lolly's",
-          300),
-          ("Functies en Fiasco's",
-          500),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
+          ("I Spent 50 Hours In Solitary Confinement",
+          100000000),
         ]
     - expression: |
-        insert_video([("Functies en Fiasco's", 250), ("Recursie en Rijstpap", 800)], ("Datatypes en Donuts", 600))
+        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Survived On $0.01 For 30 Days", 1000000))
       return:
         [
-          ("Functies en Fiasco's",
-          250),
-          ("Datatypes en Donuts",
-          600),
-          ("Recursie en Rijstpap",
-          800),
+          ("I Survived On $0.01 For 30 Days",
+          1000000),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
         ]
     - expression: |
-        insert_video([("Lijsten en Lolly's", 999)], ("Hiding In IKEA Overnight", 1000))
-      return: [("Lijsten en Lolly's", 999), ("Hiding In IKEA Overnight", 1000)]
-    - expression: |
-        insert_video([("Loops en Limonade", 300), ("Databanken en Donuts", 400)], ("Ifs en IJsjes", 350))
+        insert_video([("I Gave Away $1,000,000", 12000000), ("Last To Leave The Circle Wins $500,000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Built Willy Wonka's Chocolate Factory", 30000000))
       return:
         [
-          ("Loops en Limonade",
-          300),
-          ("Ifs en IJsjes",
-          350),
-          ("Databanken en Donuts",
-          400),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("I Built Willy Wonka's Chocolate Factory",
+          30000000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
         ]
     - expression: |
-        insert_video([("Zero Views, Zero Problems", 0), ("Python voor Pannenkoeken", 120)], ("Ik leerde Python in 1 dag", 1))
+        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 25000000), ("I Spent 50 Hours In Solitary Confinement", 80000000)], ("I Gave My 100,000,000th Subscriber $1,000,000", 60000000))
       return:
         [
-          ("Zero Views,
-          Zero Problems",
-          0),
-          ("Ik leerde Python in 1 dag",
-          1),
-          ("Python voor Pannenkoeken",
-          120),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          25000000),
+          ("I Gave My 100,
+          000,
+          000th Subscriber $1,
+          000,
+          000",
+          60000000),
+          ("I Spent 50 Hours In Solitary Confinement",
+          80000000),
         ]
     - expression: |
-        insert_video([("Functies en Fiasco's", 500)], ("Functies en Fiasco's 2", 499))
-      return: [("Functies en Fiasco's 2", 499), ("Functies en Fiasco's", 500)]
+        insert_video([("I Built Willy Wonka's Chocolate Factory", 99900000)], ("I Survived In Antarctica For 50 Hours", 100000000))
+      return:
+        [
+          ("I Built Willy Wonka's Chocolate Factory",
+          99900000),
+          ("I Survived In Antarctica For 50 Hours",
+          100000000),
+        ]
+    - expression: |
+        insert_video([("Last To Leave The Circle Wins $500,000", 30000000), ("I Bought Everything In A Store", 40000000)], ("I Gave Away A Private Island", 35000000))
+      return:
+        [
+          ("Last To Leave The Circle Wins $500,
+          000",
+          30000000),
+          ("I Gave Away A Private Island",
+          35000000),
+          ("I Bought Everything In A Store",
+          40000000),
+        ]
+    - expression: |
+        insert_video([("I Survived On $0.01 For 30 Days", 1000000), ("I Gave Away $1,000,000", 12000000)], ("I Survived 7 Days Buried Alive", 10000000))
+      return:
+        [
+          ("I Survived On $0.01 For 30 Days",
+          1000000),
+          ("I Survived 7 Days Buried Alive",
+          10000000),
+          ("I Gave Away $1,
+          000,
+          000",
+          12000000),
+        ]
+    - expression: |
+        insert_video([("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Gave Away $10,000 To Strangers", 49900000))
+      return:
+        [
+          ("I Gave Away $10,
+          000 To Strangers",
+          49900000),
+          ("Surviving 24 Hours In The Bermuda Triangle",
+          50000000),
+        ]
