@@ -1,7 +1,7 @@
 - tab: "vervang_element"
   testcases:
     - expression: "vervang_element((1, 2, 3, 4, 5), 2, 99)"
-      return: (1, 2, 99, 4, 5)
+      return: \(1, 2, 99, 4, 5\)
     - expression: "vervang_element((10, 20, 30), 0, 100)"
       return: (100, 20, 30)
     - expression: 'vervang_element(("a", "b", "c"), 1, "z")'
