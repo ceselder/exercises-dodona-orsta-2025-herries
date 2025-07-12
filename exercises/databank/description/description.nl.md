@@ -15,15 +15,15 @@ Schrijf een functie `insert_video(databank, video)` die een nieuwe video (tuple)
 ### Voorbeeld
 
 ```python
-databank = [("Intro Python", 120), ("Loops uitgelegd", 300), ("Functies", 500)]
-insert_video(databank, ("Databanken", 400))
+databank = [("Python voor Pannenkoeken", 120), ("Loops en Limonade", 300), ("Functies en Fiasco's", 500)]
+insert_video(databank, ("Databanken en Donuts", 400))
 print(databank)
 ```
 
 **Uitvoer:**
 
 ```
-[('Intro Python', 120), ('Loops uitgelegd', 300), ('Databanken', 400), ('Functies', 500)]
+[('Python voor Pannenkoeken', 120), ('Loops en Limonade', 300), ('Databanken en Donuts', 400), ('Functies en Fiasco\'s', 500)]
 ```
 
 ### Tips
