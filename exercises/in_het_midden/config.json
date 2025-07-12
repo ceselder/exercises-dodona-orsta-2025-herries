@@ -4,9 +4,11 @@
       "nl": "In het midden"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "US5HsWBHudnCXT9CEPZIJhUS526UBSu42Z9H6XmIpAPX2X65CT_WG5Yf7TVWRRbb",
+    "token": "bFXFgwYuFkivubdzIntxAU_-ygSAsZdmRW3jfRZi3uzpJHy4gEMVdyY8Yd_Nwjyz",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
