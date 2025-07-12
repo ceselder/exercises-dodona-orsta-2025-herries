@@ -4,9 +4,11 @@
       "nl": "Lijsten samenvoegen"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "iguFuF6Gd5JmvjiTUXiWIt7PKmHV-au5IJNsVw4XbCciXMaxXyeM8Rk-MJsYZDvi",
+    "token": "vj7TPmuBzb-D466qhGnmeh9IWrv8MpTIKr3MECjS2eksdTW7vPig7ZJfrM_pvaTt",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
