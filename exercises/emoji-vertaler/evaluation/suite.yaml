@@ -1,0 +1,26 @@
+- tab: "vertaal_emoji"
+  testcases:
+    - expression: |
+        vertaal_emoji("ik ben blij maar soms verdrietig", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "ik ben 😊 maar soms 😢"
+    - expression: |
+        vertaal_emoji("hij is cool en verliefd", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "hij is 😎 en 😍"
+    - expression: |
+        vertaal_emoji("ik ben boos", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "ik ben 😠"
+    - expression: |
+        vertaal_emoji("ik ben blij en cool", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "ik ben 😊 en 😎"
+    - expression: |
+        vertaal_emoji("ik ben gelukkig", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "ik ben gelukkig"
+    - expression: |
+        vertaal_emoji("", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: ""
+    - expression: |
+        vertaal_emoji("verliefd blij verdrietig cool boos", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "😍 😊 😢 😎 😠"
+    - expression: |
+        vertaal_emoji("ik ben blij blij blij", [("blij", "😊"), ("verdrietig", "😢"), ("boos", "😠"), ("cool", "😎"), ("verliefd", "😍")])
+      return: "ik ben 😊 😊 😊"
