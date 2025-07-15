@@ -4,9 +4,11 @@
       "nl": "3 op een rij!"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "7eujUswC9PdBXtQpDmJ5kqTcyF8G2_tPD_DR-MMHfkHZv3Yh2ddhExGAV-Hn2fM_",
+    "token": "ys8ZiEMnTPABAAcAFdr8rwhXKkxvMp7Kh8y_DWYBwecEyHBQ_sBt-7txcUf3dBZ9",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
