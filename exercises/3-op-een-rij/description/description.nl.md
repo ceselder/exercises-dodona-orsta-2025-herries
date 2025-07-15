@@ -1,4 +1,4 @@
-# Opgave: Tic-Tac-Toe Validator
+# Opgave: 3 op een rij!
 
 Schrijf een functie in Python die bepaalt wie er gewonnen heeft in een Tic-Tac-Toe spel (3 op een rij). Het bord wordt voorgesteld als een tuple van drie tuples, waarbij elke tuple een rij is met drie waarden: `"X"`, `"O"` of `""` (een lege string).
 
