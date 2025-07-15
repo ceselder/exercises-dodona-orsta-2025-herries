@@ -1,18 +1,18 @@
 - tab: "combineer_tuples"
   testcases:
     - expression: "combineer_tuples((1, 2), (3, 4))"
-      return: (1, 2, 3, 4)
+      stdout: (1, 2, 3, 4)
     - expression: "combineer_tuples(('a', 'b'), ('c', 'd'))"
-      return: ('a', 'b', 'c', 'd')
+      stdout: ('a', 'b', 'c', 'd')
     - expression: "combineer_tuples((True, False), (False, True))"
-      return: (True, False, False, True)
+      stdout: (True, False, False, True)
     - expression: "combineer_tuples((None, None), (None, None))"
-      return: (None, None, None, None)
+      stdout: (None, None, None, None)
     - expression: "combineer_tuples((1.1, 2.2), (3.3, 4.4))"
-      return: (1.1, 2.2, 3.3, 4.4)
+      stdout: (1.1, 2.2, 3.3, 4.4)
     - expression: "combineer_tuples(('x', 'y'), ('z', 'w'))"
-      return: ('x', 'y', 'z', 'w')
+      stdout: ('x', 'y', 'z', 'w')
     - expression: "combineer_tuples((0, 0), (0, 0))"
-      return: (0, 0, 0, 0)
+      stdout: (0, 0, 0, 0)
     - expression: "combineer_tuples((100, 200), (300, 400))"
-      return: (100, 200, 300, 400)
+      stdout: (100, 200, 300, 400)
