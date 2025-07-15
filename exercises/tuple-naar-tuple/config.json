@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Tuple naar Tuple"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "YjrcWW3Df5qR2q8jnccdmMj7jH_4rwD3Jv5yQW79_EwznuF9terJhCBwFrcSkfXG",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
