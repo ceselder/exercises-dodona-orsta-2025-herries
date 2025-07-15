@@ -19,7 +19,7 @@
     - expression: "bepaal_winnaar((('O', 'X', 'O'), ('X', 'O', 'X'), ('X', 'O', 'X')))"
       return: "niemand wint"
     - expression: "bepaal_winnaar((('O', 'X', 'X'), ('X', 'O', 'O'), ('X', '', 'O')))"
-      return: "niemand wint"
+      return: "O wint"
     - expression: "bepaal_winnaar((('X', 'X', 'X'), ('O', 'O', ''), ('', '', '')))"
       return: "X wint"
     - expression: "bepaal_winnaar((('O', '', ''), ('O', 'X', 'X'), ('O', '', 'X')))"
