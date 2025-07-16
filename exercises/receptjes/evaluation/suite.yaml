@@ -1,15 +1,6 @@
 - tab: "voeg_recept_toe"
   testcases:
-    - expression: |
-        recepten = [
-          ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5),
-          ("Erwtensoep", 45, 6, "Nederlands", 4.2),
-          ("Pad Thai", 25, 3, "Thais", 4.6),
-          ("Tosti", 5, 1, "Nederlands", 3.8),
-          ("Pizza Margherita", 30, 2, "Italiaans", 4.0)
-        ]
-        voeg_recept_toe(recepten, ("Lasagne", 50, 4, "Italiaans", 4.7))
-        recepten
+    - expression: 'recepten = [("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)]; voeg_recept_toe(recepten, ("Lasagne", 50, 4, "Italiaans", 4.7)); recepten'
       stdout: '[("Lasagne", 50, 4, "Italiaans", 4.7), ("Pad Thai", 25, 3, "Thais", 4.6), ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Tosti", 5, 1, "Nederlands", 3.8)]'
     - expression: |
         recepten = []
@@ -20,18 +11,12 @@
         recepten = [("Tosti", 5, 1, "Nederlands", 3.8)]
         voeg_recept_toe(recepten, ("Bami", 30, 4, "Chinees", 4.0))
         recepten
-      stdout: '[("Bami", 30, 4, "Chinees", 4.0), ("Tosti", 5, 1, "Nederlands", 3.8)]'
-
-- tab: "zoek_op_keuken"
-  testcases:
+    - expression: 'recepten = []; voeg_recept_toe(recepten, ("Taco", 15, 2, "Mexicaans", 4.3)); recepten'
     - expression: |
         recepten = [
           ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5),
           ("Erwtensoep", 45, 6, "Nederlands", 4.2),
-          ("Pad Thai", 25, 3, "Thais", 4.6),
-          ("Tosti", 5, 1, "Nederlands", 3.8),
-          ("Pizza Margherita", 30, 2, "Italiaans", 4.0)
-        ]
+    - expression: 'recepten = [("Tosti", 5, 1, "Nederlands", 3.8)]; voeg_recept_toe(recepten, ("Bami", 30, 4, "Chinees", 4.0)); recepten'
         zoek_op_keuken(recepten, "Nederlands")
       stdout: '[("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Tosti", 5, 1, "Nederlands", 3.8)]'
     - expression: |
@@ -39,15 +24,7 @@
           ("Pad Thai", 25, 3, "Thais", 4.6),
           ("Pizza Margherita", 30, 2, "Italiaans", 4.0)
         ]
-        zoek_op_keuken(recepten, "Italiaans")
-      stdout: '[("Pizza Margherita", 30, 2, "Italiaans", 4.0)]'
-    - expression: |
-        recepten = [
-          ("Pad Thai", 25, 3, "Thais", 4.6)
-        ]
-        zoek_op_keuken(recepten, "Frans")
-      stdout: "[]"
-
+    - expression: 'recepten = [("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)]; zoek_op_keuken(recepten, "Nederlands")'
 - tab: "zoek_op_tijd"
   testcases:
     - expression: |
@@ -57,23 +34,17 @@
           ("Pad Thai", 25, 3, "Thais", 4.6),
           ("Tosti", 5, 1, "Nederlands", 3.8),
           ("Pizza Margherita", 30, 2, "Italiaans", 4.0)
-        ]
-        zoek_op_tijd(recepten, 25)
-      stdout: '("Pad Thai", 25, 3, "Thais", 4.6)'
-    - expression: |
-        recepten = [
-          ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5),
+    - expression: 'recepten = [("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)]; zoek_op_keuken(recepten, "Italiaans")'
           ("Erwtensoep", 45, 6, "Nederlands", 4.2),
           ("Pad Thai", 25, 3, "Thais", 4.6),
           ("Tosti", 5, 1, "Nederlands", 3.8),
           ("Pizza Margherita", 30, 2, "Italiaans", 4.0)
         ]
         zoek_op_tijd(recepten, 10)
-      stdout: "None"
-    - expression: |
-        recepten = [
-          ("Tosti", 5, 1, "Nederlands", 3.8),
-          ("Pad Thai", 25, 3, "Thais", 4.6)
+    - expression: 'recepten = [("Pad Thai", 25, 3, "Thais", 4.6)]; zoek_op_keuken(recepten, "Frans")'
         ]
         zoek_op_tijd(recepten, 5)
       stdout: '("Tosti", 5, 1, "Nederlands", 3.8)'
+    - expression: 'recepten = [("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)]; zoek_op_tijd(recepten, 25)'
+    - expression: 'recepten = [("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)]; zoek_op_tijd(recepten, 10)'
+    - expression: 'recepten = [("Tosti", 5, 1, "Nederlands", 3.8), ("Pad Thai", 25, 3, "Thais", 4.6)]; zoek_op_tijd(recepten, 5)'
