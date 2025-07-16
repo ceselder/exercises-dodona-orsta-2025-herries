@@ -1,7 +1,5 @@
 - tabs: ["sorteer_bergen"]
-  units: [""]
-  contexts: []
-  cases:
+  testcases:
     - expression: |
         sorteer_bergen([("Mount Everest", 8848, "meter"), ("K2", 28251, "feet"), ("Mont Blanc", 4.8, "kilometer")])
       stdout: "[('K2', 28251, 'feet'), ('Mount Everest', 8848, 'meter'), ('Mont Blanc', 4.8, 'kilometer')]"
