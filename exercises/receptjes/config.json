@@ -4,9 +4,11 @@
       "nl": "Receptjes"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "ys8ZiEMnTPABAAcAFdr8rwhXKkxvMp7Kh8y_DWYBwecEyHBQ_sBt-7txcUf3dBZ9",
+    "token": "dI6kC5cxE9N5Cv5abdWkuNXbMKT4DJxDdUMsvNBtKnw6bNIt-3UckBebjxaczu5J",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
