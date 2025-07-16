@@ -2,7 +2,7 @@
   testcases:
     - expression: |
         sorteer_bergen(("Mount Everest", 8848, "meter"), ("K2", 28251, "feet"), ("Mont Blanc", 4.8, "kilometer"))
-      stdout: [("K2", 28251, "feet"), ("Mount Everest", 8848, "meter"), ("Mont Blanc", 4.8, "kilometer")]
+      stdout: [('K2', 28251, 'feet'), ("Mount Everest", 8848, "meter"), ("Mont Blanc", 4.8, "kilometer")]
     - expression: |
         sorteer_bergen(("A", 1000, "meter"), ("B", 1, "kilometer"), ("C", 3281, "feet"))
       stdout: [("C", 3281, "feet"), ("A", 1000, "meter"), ("B", 1, "kilometer")]
