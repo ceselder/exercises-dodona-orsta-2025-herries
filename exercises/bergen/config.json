@@ -4,9 +4,11 @@
       "nl": "Sorteer Flip-Flop"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "_YIVpDTBtDkmzAr6Qb66A6dv2nyBITBH5qB4kYHuXEGsxNbXYT4PjVeNDmJmQZ4F",
+    "token": "4bhpxufbXIJY6rTM8RxHpi_czIRZBNSvqgRufQKwtAJuEux6SjWn69hgtpiDI7Ef",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
