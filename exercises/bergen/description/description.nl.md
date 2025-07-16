@@ -1,6 +1,6 @@
 # Opgave: Bergen sorteren
 
-Schrijf een Python-functie die een lijst van bergen sorteert. Elke berg wordt voorgesteld als een tuple van drie elementen: `(naam, afstand, maat)`. De `maat` kan `'feet'`, `'meter'` of `'kilometer'` zijn.
+Schrijf een Python-functie die een lijst van bergen sorteert en deze afdrukt. Elke berg wordt voorgesteld als een tuple van drie elementen: `(naam, afstand, maat)`. De `maat` kan `'feet'`, `'meter'` of `'kilometer'` zijn.
 
 ## Vereisten
 
@@ -10,7 +10,7 @@ Schrijf een Python-functie die een lijst van bergen sorteert. Elke berg wordt vo
    ```
 2. **Verwerking:** Voeg de bergen één voor één toe aan een lijst.
 3. **Sorteren:** Sorteer de lijst op afstand, waarbij je alle afstanden eerst omzet naar meters.
-4. **Output:** Geef de gesorteerde lijst van bergen terug.
+4. **Output:** Print de gesorteerde lijst van bergen.
 
 ## Omrekeningen
 
@@ -20,13 +20,13 @@ Schrijf een Python-functie die een lijst van bergen sorteert. Elke berg wordt vo
 ## Voorbeeld
 
 ```python
-bergen = sorteer_bergen(
-     ("Mount Everest", 8848, "meter"),
-     ("K2", 28251, "feet"),
-     ("Mont Blanc", 4.8, "kilometer")
+sorteer_bergen(
+      ("Mount Everest", 8848, "meter"),
+      ("K2", 28251, "feet"),
+      ("Mont Blanc", 4.8, "kilometer")
 )
 ```
 
 ## Verwachte output
 
-De bergen gesorteerd van klein naar groot (op afstand in meters).
+De bergen gesorteerd van klein naar groot (op afstand in meters) worden geprint.
