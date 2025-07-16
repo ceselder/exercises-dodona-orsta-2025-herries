@@ -34,7 +34,7 @@ Schrijf een functie `zoek_op_keuken(recepten_lijst, keuken_type)` die alle recep
 
 ### 3. Binair Zoeken
 
-Schrijf een functie `zoek_op_tijd(recepten_lijst, bereidingstijd)` die een recept zoekt met een exacte bereidingstijd via binair zoeken. Sorteer de lijst eerst op bereidingstijd.
+Schrijf een functie `zoek_op_tijd(recepten_lijst, bereidingstijd)` die een recept zoekt met een exacte bereidingstijd via binair zoeken. Je mag ervan uit gaan dat de lijst al gesorteerd is.
 
 ## Testcode
 

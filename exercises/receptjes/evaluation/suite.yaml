@@ -16,13 +16,13 @@
       stdout: "[('Erwtensoep', 45, 6, 'Nederlands', 4.2), ('Tosti', 5, 1, 'Nederlands', 3.8)]"
 - tab: "zoek_op_tijd"
   testcases:
-    - expression: 'zoek_op_tijd([("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)], 10)'
+    - expression: 'zoek_op_tijd([("Tosti", 5, 1, "Nederlands", 3.8), ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Erwtensoep", 45, 6, "Nederlands", 4.2)], 5)'
       stdout: "('Tosti', 5, 1, 'Nederlands', 3.8)"
-    - expression: 'zoek_op_tijd([("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)], 5)'
+    - expression: 'zoek_op_tijd([("Tosti", 5, 1, "Nederlands", 3.8), ("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Erwtensoep", 45, 6, "Nederlands", 4.2)], 5)'
       stdout: "('Tosti', 5, 1, 'Nederlands', 3.8)"
-    - expression: 'zoek_op_tijd([("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)], 25)'
+    - expression: 'zoek_op_tijd([("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Erwtensoep", 45, 6, "Nederlands", 4.2)], 25)'
       stdout: "('Pad Thai', 25, 3, 'Thais', 4.6)"
-    - expression: 'zoek_op_tijd([("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Erwtensoep", 45, 6, "Nederlands", 4.2), ("Pad Thai", 25, 3, "Thais", 4.6), ("Tosti", 5, 1, "Nederlands", 3.8), ("Pizza Margherita", 30, 2, "Italiaans", 4.0)], 10)'
-      stdout: "('Tosti', 5, 1, 'Nederlands', 3.8)"
+    - expression: 'zoek_op_tijd([("Tosti", 5, 1, "Nederlands", 3.8), ("Spaghetti Carbonara", 20, 4, "Italiaans", 4.5), ("Pad Thai", 25, 3, "Thais", 4.6), ("Pizza Margherita", 30, 2, "Italiaans", 4.0), ("Erwtensoep", 45, 6, "Nederlands", 4.2)], 20)'
+      stdout: "('Spaghetti Carbonara', 20, 4, 'Italiaans', 4.5)"
     - expression: 'zoek_op_tijd([("Tosti", 5, 1, "Nederlands", 3.8), ("Pad Thai", 25, 3, "Thais", 4.6)], 5)'
       stdout: "('Tosti', 5, 1, 'Nederlands', 3.8)"
