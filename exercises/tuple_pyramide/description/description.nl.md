@@ -54,4 +54,4 @@ Resultaat:
 
 enz...
 
-**Dit is een pittige oefening!**
+**Dit is een pittige oefening! Het is normaal dat je wat meer tijd nodig hebt!**
