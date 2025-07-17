@@ -29,6 +29,6 @@
     - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], 'Omega')
       return: ["Boek", "Data", "Omega", "Python"]
     - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], 'aardbei')
-      return: ["Boek", "Data", "Python", "aardbei"]
+      return: ["aardbei", "Boek", "Data", "Python"]
     - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], 'Zebra')
       return: ["Boek", "Data", "Python", "Zebra"]
