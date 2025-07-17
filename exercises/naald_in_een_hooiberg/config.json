@@ -4,9 +4,11 @@
       "nl": "Naald in een hooiberg"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "3QMg7Pu-NfrNW6TTvdQCIfIQWAD55WapMBk9wjPp3yMnZ-eZ5y6wX3VKI9c4PfZA",
+    "token": "SNvhT9D2ZZ6b6A4qiZhWmqS7ZYpjuA_mkgQmwAbDIiikM6zaKng-ufuhUVYEu4Y2",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
