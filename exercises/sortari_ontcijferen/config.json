@@ -4,9 +4,11 @@
       "nl": "Sortari ontcijferen"
     }
   },
-  "labels": ["template"],
+  "labels": [
+    "template"
+  ],
   "internals": {
-    "token": "VJN2ATrISW657If-MFMRwuKUTfza6XEYtEg2bndKaQr5M2CntBYCE4wadKU3KBPn",
+    "token": "vC7apT9ysnCyIXV8k4WpPcq6wiS5hmmFY-4Qwge4zG4Cgtp3I98tqFRHxas8tpwP",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
