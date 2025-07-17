@@ -4,3 +4,11 @@
       return: ["Python"]
     - expression: voeg_gesorteerd_toe(['Python'], "Algoritmen")
       return: ["Algoritmen", "Python"]
+    - expression: voeg_gesorteerd_toe(['Algoritmen', 'Python'], "Data")
+      return: ["Algoritmen", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Algoritmen', 'Data', 'Python'], "Boek")
+      return: ["Algoritmen", "Boek", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Algoritmen', 'Boek', 'Data', 'Python'], "Zebra")
+      return: ["Algoritmen", "Boek", "Data", "Python", "Zebra"]
+    - expressioan: voeg_gesorteerd_toe([], "Boek")
+      return: ["Boek"]
