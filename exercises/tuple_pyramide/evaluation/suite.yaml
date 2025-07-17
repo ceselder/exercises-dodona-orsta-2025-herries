@@ -1,17 +1,17 @@
 - tab: "tuple_pyramide"
   testcases:
-    - expression: 'tuple_pyramide(1, "x")'
+    - expression: "tuple_pyramide(1, 'x')"
       return: "x"
-    - expression: 'tuple_pyramide(2, "x")'
-      return: ("x", "x")
-    - expression: 'tuple_pyramide(3, "x")'
-      return: (("x", "x"), ("x", "x"), ("x", "x"))
-    - expression: 'tuple_pyramide(4, "x")'
-      return: ((("x", "x"), ("x", "x"), ("x", "x")),
-        (("x", "x"), ("x", "x"), ("x", "x")),
-        (("x", "x"), ("x", "x"), ("x", "x")),
-        (("x", "x"), ("x", "x"), ("x", "x")))
-    - expression: 'tuple_pyramide(2, "abc")'
-      return: ("abc", "abc")
-    - expression: 'tuple_pyramide(3, "y")'
-      return: (("y", "y"), ("y", "y"), ("y", "y"))
+    - expression: "tuple_pyramide(2, 'x')"
+      return: ('x', 'x')
+    - expression: "tuple_pyramide(3, 'x')"
+      return: (('x', 'x'), ('x', 'x'), ('x', 'x'))
+    - expression: "tuple_pyramide(4, 'x')"
+      return: ((('x', 'x'), ('x', 'x'), ('x', 'x')),
+        (('x', 'x'), ('x', 'x'), ('x', 'x')),
+        (('x', 'x'), ('x', 'x'), ('x', 'x')),
+        (('x', 'x'), ('x', 'x'), ('x', 'x')))
+    - expression: "tuple_pyramide(2, 'abc')"
+      return: ('abc', 'abc')
+    - expression: "tuple_pyramide(3, 'y')"
+      return: (('y', 'y'), ('y', 'y'), ('y', 'y'))
