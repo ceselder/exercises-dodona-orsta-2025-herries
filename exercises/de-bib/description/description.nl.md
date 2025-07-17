@@ -1,24 +1,26 @@
-# Opgave: Groeperen op basis van verschil
+# Opgave: Gesorteerd Invoegen in een Lijst — "De Bibliotheek"
 
-Gegeven een gesorteerde lijst van gehele getallen, schrijf een Python-functie die deze lijst opsplitst in groepen waarbij het verschil tussen opeenvolgende getallen **exact gelijk is**. Elke groep bevat dus getallen die eenzelfde sprong maken.
+In deze opgave ga je een Python-functie schrijven die een lijst van ongeordende strings (boekentitels) één voor één alfabetisch invoegt in een nieuwe lijst, zodat deze altijd gesorteerd blijft.
 
-## Voorbeeld
+## Probleemstelling
+
+Je krijgt een lijst `boeken` met ongeordende strings. Schrijf een functie `voeg_gesorteerd_toe(gesorteerde_lijst, nieuw_boek)` die een string `nieuw_boek` op de juiste alfabetische plaats invoegt in de lijst `gesorteerde_lijst`, zodat deze gesorteerd blijft.
+
+Gebruik deze functie om alle boeken uit de lijst `boeken` in een nieuwe lijst `bibliotheek` te plaatsen, zodat `bibliotheek` altijd alfabetisch gesorteerd is.
+
+### Voorbeeld
 
 ```python
-# Input
-getallen = [2, 4, 6, 9, 12, 15, 18]
+boeken = ["Python", "Algoritmen", "Data", "Boek", "Zebra"]
 
-# Output
-groepen = groepeer_op_verschil(getallen)
-print(groepen) # [[2, 4, 6], [9, 12, 15, 18]]
+bibliotheek = []
+for boek in boeken:
+    voeg_gesorteerd_toe(bibliotheek, boek)
+
+print(bibliotheek)
+# output: ['Algoritmen', 'Boek', 'Data', 'Python', 'Zebra']
 ```
-
-In dit voorbeeld is het verschil tussen 2, 4 en 6 telkens 2, en tussen 9, 12, 15, 18 telkens 3.
 
 ## Vereisten
 
-- Implementeer een functie `groepeer_op_verschil(lijst)` die de gesorteerde lijst als parameter krijgt en een lijst van groepen retourneert.
-- Elke groep bevat minstens twee getallen.
-- Gebruik Python-lijstoperaties en slicing waar mogelijk.
-
-Veel succes!
+- Je moet de invoegpositie zelf bepalen en het boek daar invoegen.

@@ -1,12 +1,10 @@
 {
   "description": {
     "names": {
-      "nl": "Vouwen"
+      "nl": "De Bib"
     }
   },
-  "labels": [
-    "template"
-  ],
+  "labels": ["template"],
   "internals": {
     "token": "_7bBVeW4jmxJUyPaspkMq8IyNwUk2Zu64bf6mnVtsrGCQQcrZhQMfS3HYinm5Sxe",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
