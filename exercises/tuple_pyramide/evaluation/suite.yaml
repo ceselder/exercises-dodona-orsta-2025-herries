@@ -1,17 +1,17 @@
 - tab: "tuple_pyramide"
   testcases:
     - expression: "tuple_pyramide(1, 'x')"
-      return: "x"
+      stdout: "x"
     - expression: "tuple_pyramide(2, 'x')"
-      return: ('x', 'x')
+      stdout: ('x', 'x')
     - expression: "tuple_pyramide(3, 'x')"
-      return: (('x', 'x'), ('x', 'x'), ('x', 'x'))
+      stdout: (('x', 'x'), ('x', 'x'), ('x', 'x'))
     - expression: "tuple_pyramide(4, 'x')"
-      return: ((('x', 'x'), ('x', 'x'), ('x', 'x')),
+      stdout: (('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')))
     - expression: "tuple_pyramide(2, 'abc')"
-      return: ('abc', 'abc')
+      stdout: ('abc', 'abc')
     - expression: "tuple_pyramide(3, 'y')"
-      return: (('y', 'y'), ('y', 'y'), ('y', 'y'))
+      stdout: (('y', 'y'), ('y', 'y'), ('y', 'y'))

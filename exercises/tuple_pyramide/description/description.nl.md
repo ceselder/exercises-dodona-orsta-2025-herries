@@ -2,6 +2,8 @@
 
 We willen een recursieve functie `tuple_pyramide(n, s)` schrijven die een geneste tuple-structuur opbouwt.
 
+Je moet de pyramide printen op het einde, niet retourneren
+
 ### Belangrijk
 
 - Het basiselement is de string `s`.
