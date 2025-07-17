@@ -3,20 +3,20 @@
     - expression: 'vind_naald_indexes(["hooi", "naald", "hooi", "naald", "hooi"])'
       return: [1, 3]
     - expression: 'vind_naald_indexes(["hooi", "hooi", "hooi"])'
-      return: "[]"
+      return: []
     - expression: 'vind_naald_indexes(["naald", "naald", "naald"])'
-      return: "[0, 1, 2]"
+      return: [0, 1, 2]
     - expression: "vind_naald_indexes([])"
-      return: "[]"
+      return: []
     - expression: 'vind_naald_indexes(["naald"])'
-      return: "[0]"
+      return: [0]
     - expression: 'vind_naald_indexes(["hooi", "hooi", "naald"])'
-      return: "[2]"
+      return: [2]
     - expression: 'vind_naald_indexes(["naald", "hooi", "naald", "hooi", "naald"])'
-      return: "[0, 2, 4]"
+      return: [0, 2, 4]
     - expression: 'vind_naald_indexes(["hooi", "naald", "hooi", "hooi", "naald"])'
-      return: "[1, 4]"
+      return: [1, 4]
     - expression: 'vind_naald_indexes(["hooi", "hooi", "hooi", "naald"])'
-      return: "[3]"
+      return: [3]
     - expression: 'vind_naald_indexes(["naald", "hooi", "hooi", "hooi"])'
-      return: "[0]"
+      return: [0]
