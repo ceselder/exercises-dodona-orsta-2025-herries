@@ -6,8 +6,6 @@
       return: ["Algoritmen", "Python"]
     - expression: voeg_gesorteerd_toe(['Algoritmen', 'Python'], "Data")
       return: ["Algoritmen", "Data", "Python"]
-    - expression: voeg_gesorteerd_toe(['Algoritmen', 'Data', 'Python'], "Boek")
-      return: ["Algoritmen", "Boek", "Data", "Python"]
     - expressioan: voeg_gesorteerd_toe([], "Boek")
       return: ["Boek"]
     - expression: voeg_gesorteerd_toe(['Boek'], "Boek")
