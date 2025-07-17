@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Naald in een hooiberg"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "3QMg7Pu-NfrNW6TTvdQCIfIQWAD55WapMBk9wjPp3yMnZ-eZ5y6wX3VKI9c4PfZA",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
