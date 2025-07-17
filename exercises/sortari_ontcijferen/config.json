@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Sortari ontcijferen"
+    }
+  },
+  "labels": ["template"],
+  "internals": {
+    "token": "VJN2ATrISW657If-MFMRwuKUTfza6XEYtEg2bndKaQr5M2CntBYCE4wadKU3KBPn",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
