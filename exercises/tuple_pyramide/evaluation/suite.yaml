@@ -1,0 +1,22 @@
+- tab: "binaire_zoek_invoegpositie"
+  testcases:
+    - expression: 'binaire_zoek_invoegpositie([], "Python")'
+      return: [0, 0]
+    - expression: 'binaire_zoek_invoegpositie(["Boek"], "Algoritmen")'
+      return: [0, 1]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen"], "Boek")'
+      return: [1, 1]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek"], "Data")'
+      return: [2, 1]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data"], "Python")'
+      return: [3, 2]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data", "Python"], "Zebra")'
+      return: [4, 2]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data", "Python"], "Boek")'
+      return: [2, 2]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data", "Python"], "Aap")'
+      return: [0, 3]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data", "Python"], "Data")'
+      return: [3, 2]
+    - expression: 'binaire_zoek_invoegpositie(["Algoritmen", "Boek", "Data", "Python"], "Cursus")'
+      return: [2, 2]
