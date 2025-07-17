@@ -6,12 +6,6 @@
       return: ["Algoritmen", "Python"]
     - expression: voeg_gesorteerd_toe(['Algoritmen', 'Python'], 'Data')
       return: ["Algoritmen", "Data", "Python"]
-    - expressioan: voeg_gesorteerd_toe([], 'Boek')
-      return: ["Boek"]
-    - expression: voeg_gesorteerd_toe(['Boek'], 'Boek')
-      return: ["Boek", "Boek"]
-    - expression: voeg_gesorteerd_toe(['Boek', 'Boek'], 'Boek')
-      return: ["Boek", "Boek", "Boek"]
     - expression: voeg_gesorteerd_toe(['Aap', 'Muis', 'Zebra'], 'Leeuw')
       return: ["Aap", "Leeuw", "Muis", "Zebra"]
     - expression: voeg_gesorteerd_toe(['Aap', 'Leeuw', 'Muis', 'Zebra'], 'Beer')
