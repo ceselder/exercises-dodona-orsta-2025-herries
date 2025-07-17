@@ -1,4 +1,4 @@
-# Opgave: Gesorteerd Invoegen in een Lijst — "De Bibliotheek"
+# Opgave: De Bibliotheek
 
 In deze opgave ga je een Python-functie schrijven die een lijst van ongeordende strings (boekentitels) één voor één alfabetisch invoegt in een nieuwe lijst, zodat deze altijd gesorteerd blijft.
 
