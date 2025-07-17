@@ -16,7 +16,3 @@ Schrijf een functie `vind_naald_indexes(hooiberg)` die als input een lijst van s
 ### Gevraagd
 
 - Geef een lijst terug met de indexen waar `"naald"` voorkomt.
-
-### Tips
-
-- Gebruik een for-lus met `enumerate()` om zowel de index als het element te krijgen.
