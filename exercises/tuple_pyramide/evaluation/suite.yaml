@@ -7,7 +7,7 @@
     - expression: "tuple_pyramide(3, 'x')"
       stdout: (('x', 'x'), ('x', 'x'), ('x', 'x'))
     - expression: "tuple_pyramide(4, 'x')"
-      stdout: (('x', 'x'), ('x', 'x'), ('x', 'x')),
+      stdout: ((('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')),
         (('x', 'x'), ('x', 'x'), ('x', 'x')))
