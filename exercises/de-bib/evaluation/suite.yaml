@@ -8,3 +8,35 @@
       return: ["Algoritmen", "Data", "Python"]
     - expression: voeg_gesorteerd_toe(['Algoritmen', 'Data', 'Python'], "Boek")
       return: ["Algoritmen", "Boek", "Data", "Python"]
+    - expressioan: voeg_gesorteerd_toe([], "Boek")
+      return: ["Boek"]
+    - expression: voeg_gesorteerd_toe(['Boek'], "Boek")
+      return: ["Boek", "Boek"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Boek'], "Boek")
+      return: ["Boek", "Boek", "Boek"]
+    - expression: voeg_gesorteerd_toe(['Aap', 'Muis', 'Zebra'], "Leeuw")
+      return: ["Aap", "Leeuw", "Muis", "Zebra"]
+    - expression: voeg_gesorteerd_toe(['Aap', 'Leeuw', 'Muis', 'Zebra'], "Beer")
+      return: ["Aap", "Beer", "Leeuw", "Muis", "Zebra"]
+    - expression: voeg_gesorteerd_toe(['Aap', 'Beer', 'Leeuw', 'Muis', 'Zebra'], "Vis")
+      return: ["Aap", "Beer", "Leeuw", "Muis", "Vis", "Zebra"]
+    - expression: voeg_gesorteerd_toe(['Aap', 'Beer', 'Leeuw', 'Muis', 'Vis', 'Zebra'], "Aap")
+      return: ["Aap", "Aap", "Beer", "Leeuw", "Muis", "Vis", "Zebra"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Algoritmen")
+      return: ["Algoritmen", "Boek", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Zebra")
+      return: ["Boek", "Data", "Python", "Zebra"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Boek")
+      return: ["Boek", "Boek", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Data")
+      return: ["Boek", "Data", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Python")
+      return: ["Boek", "Data", "Python", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Alpha")
+      return: ["Alpha", "Boek", "Data", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Omega")
+      return: ["Boek", "Data", "Omega", "Python"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "aardbei")
+      return: ["Boek", "Data", "Python", "aardbei"]
+    - expression: voeg_gesorteerd_toe(['Boek', 'Data', 'Python'], "Zebra")
+      return: ["Boek", "Data", "Python", "Zebra"]
