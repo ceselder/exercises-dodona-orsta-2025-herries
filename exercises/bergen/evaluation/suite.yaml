@@ -1,4 +1,4 @@
-- tabs: ["sorteer_bergen"]
+- tab: "sorteer_bergen"
   testcases:
     - expression: |
         sorteer_bergen([("Mount Everest", 8848, "meter"), ("K2", 28251, "feet"), ("Mont Blanc", 4.8, "kilometer")])
