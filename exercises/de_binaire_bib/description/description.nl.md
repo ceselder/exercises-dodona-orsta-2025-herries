@@ -26,6 +26,5 @@ print(bibliotheek)
 ## Vereisten
 
 - Je moet binair zoeken gebruiken om de invoegpositie te bepalen.
-- De functie moet het aantal zoekstappen bijhouden en teruggeven.
 - De functie retourneert een tuple `(index, zoekstappen)`.
 - Gebruik deze functie om de boeken alfabetisch in te voegen in de bibliotheek.

@@ -1,18 +1,16 @@
-def bepaal_winnaar(bord):
-    lijnen_om_te_checken = []
+def binaire_zoek_invoegpositie(gesorteerde_lijst, nieuw_boek):
+    links = 0
+    rechts = len(gesorteerde_lijst)
+    #links en rechts samen definiëren het zoekgebied
 
-    for i in range(3):
-        lijnen_om_te_checken.append((bord[i][0], bord[i][1], bord[i][2])) # Rijen toevoegen
-        lijnen_om_te_checken.append((bord[0][i], bord[1][i], bord[2][i])) # Kolommen toevoegen
+    stappen = 0
 
-    # Voeg diagonalen toe
-    lijnen_om_te_checken.append((bord[0][0], bord[1][1], bord[2][2]))
-    lijnen_om_te_checken.append((bord[0][2], bord[1][1], bord[2][0]))
+    while links < rechts:
+        stappen += 1
+        midden = (links + rechts) // 2
+        if nieuw_boek < gesorteerde_lijst[midden]:
+            rechts = midden
+        else:
+            links = midden + 1
 
-    for lijn in lijnen_om_te_checken:
-        if lijn == ("X", "X", "X"):
-            return "X wint"
-        elif lijn == ("O", "O", "O"):
-            return "O wint"
-
-    return "niemand wint"
+    return links, stappen
