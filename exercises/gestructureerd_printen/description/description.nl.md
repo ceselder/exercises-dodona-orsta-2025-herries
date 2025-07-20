@@ -3,7 +3,7 @@
 Schrijf een functie die als input een tuple krijgt met drie elementen:
 
 1. **Naam van de student** (string)
-2. **Verjaardag** (string, formaat `DD-MM-YYYY`)
+2. **Verjaardag** (string)
 3. **Studentennummer** (integer)
 
 Je taak is om deze gegevens gestructureerd te printen, bijvoorbeeld:
