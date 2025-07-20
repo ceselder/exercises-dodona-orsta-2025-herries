@@ -4,8 +4,8 @@
         insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Bought Everything In A Store", 40000000))
       stdout: "[('I Gave Away $1000000', 12000000), ('Last To Leave The Circle Wins $500000', 30000000), ('I Bought Everything In A Store', 40000000), ('Surviving 24 Hours In The Bermuda Triangle', 50000000)]"
     - expression: |
-        insert_video([], ("I Ate The World's Largest Pizza", 42000000))
-      stdout: "[('I Ate The World's Largest Pizza', 42000000)]"
+        insert_video([], ("I Ate The Worlds Largest Pizza", 42000000))
+      stdout: "[('I Ate The Worlds Largest Pizza', 42000000)]"
     - expression: |
         insert_video([("Last To Leave The Circle Wins $500000", 30000000)], ("I Gave Away $1000000", 12000000))
       stdout: "[('I Gave Away $1000000', 12000000), ('Last To Leave The Circle Wins $500000', 30000000)]"
@@ -19,14 +19,14 @@
         insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Survived On $0.01 For 30 Days", 1000000))
       stdout: "[('I Survived On $0.01 For 30 Days', 1000000), ('I Gave Away $1000000', 12000000), ('Last To Leave The Circle Wins $500000', 30000000), ('Surviving 24 Hours In The Bermuda Triangle', 50000000)]"
     - expression: |
-        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Built Willy Wonka's Chocolate Factory", 30000000))
-      stdout: "[('I Gave Away $1000000', 12000000), ('Last To Leave The Circle Wins $500000', 30000000), ('I Built Willy Wonka's Chocolate Factory', 30000000), ('Surviving 24 Hours In The Bermuda Triangle', 50000000)]"
+        insert_video([("I Gave Away $1000000", 12000000), ("Last To Leave The Circle Wins $500000", 30000000), ("Surviving 24 Hours In The Bermuda Triangle", 50000000)], ("I Built Willy Wonkas Chocolate Factory", 30000000))
+      stdout: "[('I Gave Away $1000000', 12000000), ('Last To Leave The Circle Wins $500000', 30000000), ('I Built Willy Wonkas Chocolate Factory', 30000000), ('Surviving 24 Hours In The Bermuda Triangle', 50000000)]"
     - expression: |
         insert_video([("Surviving 24 Hours In The Bermuda Triangle", 25000000), ("I Spent 50 Hours In Solitary Confinement", 80000000)], ("I Gave My 100000000th Subscriber $1000000", 60000000))
       stdout: "[('Surviving 24 Hours In The Bermuda Triangle', 25000000), ('I Gave My 100000000th Subscriber $1000000', 60000000), ('I Spent 50 Hours In Solitary Confinement', 80000000)]"
     - expression: |
-        insert_video([("I Built Willy Wonka's Chocolate Factory", 99900000)], ("I Survived In Antarctica For 50 Hours", 100000000))
-      stdout: "[('I Built Willy Wonka's Chocolate Factory', 99900000), ('I Survived In Antarctica For 50 Hours', 100000000)]"
+        insert_video([("I Built Willy Wonkas Chocolate Factory", 99900000)], ("I Survived In Antarctica For 50 Hours", 100000000))
+      stdout: "[('I Built Willy Wonkas Chocolate Factory', 99900000), ('I Survived In Antarctica For 50 Hours', 100000000)]"
     - expression: |
         insert_video([("Last To Leave The Circle Wins $500000", 30000000), ("I Bought Everything In A Store", 40000000)], ("I Gave Away A Private Island", 35000000))
       stdout: "[('Last To Leave The Circle Wins $500000', 30000000), ('I Gave Away A Private Island', 35000000), ('I Bought Everything In A Store', 40000000)]"
