@@ -12,6 +12,8 @@ Hierbij is `videonaam` een string en `viewcount` een geheel getal dat het aantal
 
 Schrijf een **functie** `insert_video(databank, video)` die een nieuwe video (tuple) **invoegt op de juiste plaats** in de databank, zodat de lijst **gesorteerd blijft op viewcount** (van laag naar hoog).
 
+Print daarna de databank in de functie
+
 ### Voorbeeld
 
 ```python
@@ -33,7 +35,3 @@ print(databank)
 
 - Gebruik geen sorteerfunctie na het invoegen.
 - Zoek de juiste positie en voeg daar de nieuwe video toe.
-
-## Test je oplossing
-
-Plaats je code in een functie en probeer deze met verschillende invoer. Controleer of de databank altijd correct gesorteerd blijft.

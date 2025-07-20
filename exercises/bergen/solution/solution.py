@@ -1,18 +1,25 @@
-def bepaal_winnaar(bord):
-    lijnen_om_te_checken = []
+def naar_meters(berg):
+    """Zet de afstand van een berg om naar meters."""
+    naam, afstand, eenheid = berg
+    if eenheid == "kilometer":
+      return afstand * 1000
+    elif eenheid == "feet":
+      return afstand * 0.3048
+    else:  # eenheid is "meter"
+      return afstand
 
-    for i in range(3):
-        lijnen_om_te_checken.append((bord[i][0], bord[i][1], bord[i][2])) # Rijen toevoegen
-        lijnen_om_te_checken.append((bord[0][i], bord[1][i], bord[2][i])) # Kolommen toevoegen
 
-    # Voeg diagonalen toe
-    lijnen_om_te_checken.append((bord[0][0], bord[1][1], bord[2][2]))
-    lijnen_om_te_checken.append((bord[0][2], bord[1][1], bord[2][0]))
 
-    for lijn in lijnen_om_te_checken:
-        if lijn == ("X", "X", "X"):
-            return "X wint"
-        elif lijn == ("O", "O", "O"):
-            return "O wint"
+def sorteer_bergen(bergen_input):
+    gesorteerde_lijst = []
 
-    return "niemand wint"
+    for berg_om_in_te_voegen in bergen_input:
+      hoogte_nieuw = naar_meters(berg_om_in_te_voegen)
+      invoeg_positie = 0
+      while invoeg_positie < len(gesorteerde_lijst) and naar_meters(gesorteerde_lijst[invoeg_positie]) < hoogte_nieuw:
+        invoeg_positie += 1
+        
+      gesorteerde_lijst.insert(invoeg_positie, berg_om_in_te_voegen)
+      # dit kan ook: gesorteerde_lijst[0:invoeg_positie] + [berg_om_in_te_voegen] + gesorteerde_lijst[invoeg_positie:]
+
+    print(gesorteerde_lijst)
