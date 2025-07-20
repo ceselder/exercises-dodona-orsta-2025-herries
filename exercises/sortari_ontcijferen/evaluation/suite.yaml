@@ -9,7 +9,7 @@
     - expression: "ontcijfer(['zib', 'blorg', 'wazz'], {'blorg': 'ik', 'zib': 'hou', 'wazz': 'python'})"
       stdout: "ik python hou"
     - expression: "ontcijfer(['zib', 'blorg', 'wazz'], {'blorg': 'ik', 'wazz': 'python'})"
-      stdout: "??? ik python"
+      stdout: "ik python ???"
     - expression: "ontcijfer(['blorg'], {'blorg': 'ik'})"
       stdout: "ik"
     - expression: "ontcijfer(['blorg'], {})"
