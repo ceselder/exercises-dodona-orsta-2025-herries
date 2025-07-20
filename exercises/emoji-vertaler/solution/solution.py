@@ -6,4 +6,3 @@ def vertaal_emoji(zin, emoji_list):
                 split_zin[index] = emoji
     return " ".join(split_zin)
             
-        
