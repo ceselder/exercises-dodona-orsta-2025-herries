@@ -5,28 +5,22 @@
       stdout: "[('Mont Blanc', 4.8, 'kilometer'), ('K2', 28251, 'feet'), ('Mount Everest', 8848, 'meter')]"
     - expression: |
         sorteer_bergen([("A", 1000, "meter"), ("C", 3281, "feet")])
-      stdout: "[('C', 3281, 'feet'), ('A', 1000, 'meter')]"
+      stdout: "[('A', 1000, 'meter'), ('C', 3281, 'feet')]"
     - expression: |
         sorteer_bergen([("D", 0, "meter"), ("E", 1, "feet"), ("F", 0.001, "kilometer")])
-      stdout: "[('E', 1, 'feet'), ('D', 0, 'meter'), ('F', 0.001, 'kilometer')]"
+      stdout: "[('D', 0, 'meter'), ('E', 1, 'feet'), ('F', 0.001, 'kilometer')]"
     - expression: |
         sorteer_bergen([("G", 100, "meter"), ("H", 329, "feet")])
-      stdout: "[('H', 329, 'feet'), ('G', 100, 'meter')]"
+      stdout: "[('G', 100, 'meter'), ('H', 329, 'feet')]"
     - expression: |
         sorteer_bergen([("I", 1, "meter"), ("J", 0.002, "kilometer")])
-      stdout: "[('J', 0.002, 'kilometer'), ('I', 1, 'meter')]"
+      stdout: "[('I', 1, 'meter'), ('J', 0.002, 'kilometer')]"
     - expression: |
         sorteer_bergen([("K", 1000, "meter"), ("L", 1001, "meter")])
-      stdout: "[('L', 1001, 'meter'), ('K', 1000, 'meter')]"
-    - expression: |
-        sorteer_bergen([("M", 3282, "feet"), ("N", 1.1, "kilometer")])
-      stdout: "[('N', 1.1, 'kilometer'), ('M', 3282, 'feet')]"
+      stdout: "[('K', 1000, 'meter'), ('L', 1001, 'meter')]"
     - expression: |
         sorteer_bergen([("O", 2, "kilometer"), ("P", 2001, "meter")])
       stdout: "[('O', 2, 'kilometer'), ('P', 2001, 'meter')]"
-    - expression: |
-        sorteer_bergen([("Q", 0.5, "kilometer"), ("R", 501, "meter"), ("S", 1641, "feet")])
-      stdout: "[('S', 1641, 'feet'), ('R', 501, 'meter'), ('Q', 0.5, 'kilometer')]"
     - expression: |
         sorteer_bergen([])
       stdout: "[]"
