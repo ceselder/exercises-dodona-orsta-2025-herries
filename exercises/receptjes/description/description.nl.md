@@ -40,24 +40,6 @@ Schrijf een functie `zoek_op_tijd(recepten_lijst, bereidingstijd)` die een recep
 
 Experimenteer met onderstaande testcode om je functies te controleren:
 
-## Verwachte Output
-
-```
-=== Recepten gesorteerd op beoordeling ===
-Pad Thai - 4.6 sterren
-Spaghetti Carbonara - 4.5 sterren
-Erwtensoep - 4.2 sterren
-Pizza Margherita - 4.0 sterren
-Tosti - 3.8 sterren
-
-=== Nederlandse recepten ===
-Erwtensoep (45 min)
-Tosti (5 min)
-
-=== Recept met 25 minuten ===
-Gevonden: Pad Thai
-```
-
 ## Tips
 
 - **Gesorteerde invoeging**: Zoek de juiste positie in de lijst en voeg het recept daar toe.

@@ -1,18 +1,13 @@
-def bepaal_winnaar(bord):
-    lijnen_om_te_checken = []
-
-    for i in range(3):
-        lijnen_om_te_checken.append((bord[i][0], bord[i][1], bord[i][2])) # Rijen toevoegen
-        lijnen_om_te_checken.append((bord[0][i], bord[1][i], bord[2][i])) # Kolommen toevoegen
-
-    # Voeg diagonalen toe
-    lijnen_om_te_checken.append((bord[0][0], bord[1][1], bord[2][2]))
-    lijnen_om_te_checken.append((bord[0][2], bord[1][1], bord[2][0]))
-
-    for lijn in lijnen_om_te_checken:
-        if lijn == ("X", "X", "X"):
-            return "X wint"
-        elif lijn == ("O", "O", "O"):
-            return "O wint"
-
-    return "niemand wint"
+def groepeer_op_verschil(getallen):
+    return_list = []
+    curr_list = [getallen[0]]
+    oud_verschil = getallen[1] - getallen[0]
+    for i in range(1,len(getallen)):
+        nieuw_verschil = getallen[i] - getallen[i-1]
+        if nieuw_verschil != oud_verschil: #oude lijst toevoegen, nieuwe maken en oud_verschil aanpassen
+            return_list.append(curr_list)
+            curr_list = [getallen[i]]
+            oud_verschil = nieuw_verschil
+        else:
+            curr_list.append(getallen[i]) #blijven gaan
+    return_list.append(curr_list) 
