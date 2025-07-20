@@ -15,4 +15,4 @@ Schrijf een functie `vind_naald_indexes(hooiberg)` die als input een lijst van s
 
 ### Gevraagd
 
-- Geef een lijst terug met de indexen waar `"naald"` voorkomt.
+- Geef een lijst terug met de indices waar `"naald"` voorkomt.
