@@ -21,9 +21,9 @@ Schrijf een Python-functie die een lijst van bergen sorteert en deze afdrukt. El
 
 ```python
 sorteer_bergen(
-      ("Mount Everest", 8848, "meter"),
+      [("Mount Everest", 8848, "meter"),
       ("K2", 28251, "feet"),
-      ("Mont Blanc", 4.8, "kilometer")
+      ("Mont Blanc", 4.8, "kilometer")]
 )
 ```
 
