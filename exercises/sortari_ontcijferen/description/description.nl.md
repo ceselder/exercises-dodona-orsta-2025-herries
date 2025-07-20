@@ -28,8 +28,6 @@ ik hou python
 
 _(Let op: de alien_zin wordt eerst gesorteerd tot ['blorg', 'wazz', 'zib'], daarna vertaald tot 'ik python hou', maar omdat het woordenboek de juiste volgorde geeft na sorteren, klopt de zin.)_
 
-### Extra uitdaging
-
 Wat als een alien-woord niet in het woordenboek staat? Laat dan het woord `???` zien op die plek.
 
 #### Voorbeeld
@@ -46,7 +44,7 @@ print(ontcijfer(alien_zin, woordenboek))
 **Uitvoer:**
 
 ```
-??? ik hou
+ik  ??? hou
 ```
 
 Veel succes met het ontcijferen én sorteren!
